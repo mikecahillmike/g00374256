@@ -1,0 +1,39 @@
+
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Mercedes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <br>
+    <ion-content> 
+      <ion-title>Current car is a {{myCar}}</ion-title> 
+      <ion-list > 
+        <ion-radio-group [(ngModel)]="myCar"> 
+          <ion-item color="calm"> 
+            <ion-label>CLA</ion-label> 
+            <ion-radio value="Mercedes CLA"></ion-radio> 
+          </ion-item> 
+          <ion-item color="calm"> 
+            <ion-label>AMG GT</ion-label>
+            <ion-radio value="Mercedes AMG GT"></ion-radio> 
+          </ion-item> 
+          <ion-item color="calm"> 
+            <ion-label>C-Class</ion-label> 
+            <ion-radio value="Mercedes C-Class" ></ion-radio> 
+          </ion-item> 
+          <ion-item color="calm"> 
+            <ion-label>E-Class</ion-label> 
+            <ion-radio value="Mercedes E-Class" ></ion-radio> 
+          </ion-item> 
+          <ion-item color="calm"> 
+            <ion-label>GLC</ion-label> 
+            <ion-radio value="Mercedes GLC" ></ion-radio> 
+          </ion-item>
+        </ion-radio-group> 
+      </ion-list> 
+      <ion-button (click)="saveCar()">Save</ion-button>
+    </ion-content>
+    
+  </ion-content>

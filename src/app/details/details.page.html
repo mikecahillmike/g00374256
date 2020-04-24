@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Details Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+<br><br>
+<ion-content padding>
+  <div id="container">
+    <ion-list>
+
+      <ion-item id="textBox">
+        <ion-label fixed>Name</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+
+      <ion-item id="textBox">
+        <ion-label fixed>Reg Number</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-item> 
+      <ion-item id="textBox">
+        <ion-label fixed>Driving Licence number</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>    
+      <ion-button [routerLink]="['/home']">Save details</ion-button>
+      <ion-button (click)="locationMethod()">My Location</ion-button>
+      {{lat}},{{long}}
+    </ion-list>
+  </div>
+</ion-content>

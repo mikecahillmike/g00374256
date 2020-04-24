@@ -1,0 +1,40 @@
+<!-- Header -->
+  <ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Volkswagen</ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- My ionic list for volkswagen cars -->
+<ion-content>
+  <br>
+  <ion-content> 
+    <ion-title>Current car is a {{myCar}}</ion-title> 
+    <ion-list > 
+      <ion-radio-group [(ngModel)]="myCar"> 
+        <ion-item color="calm"> 
+          <ion-label>Golf</ion-label> 
+          <ion-radio value="Volkeswagen Golf"></ion-radio> 
+        </ion-item> 
+        <ion-item color="calm"> 
+          <ion-label>Polo</ion-label>
+          <ion-radio value="Volkeswagen Polo"></ion-radio> 
+        </ion-item> 
+        <ion-item color="calm"> 
+          <ion-label>Passat</ion-label> 
+          <ion-radio value="Volkeswagen Passet" ></ion-radio> 
+        </ion-item> 
+        <ion-item color="calm"> 
+          <ion-label>Jetta</ion-label> 
+          <ion-radio value="Volkeswagen Jetta" ></ion-radio> 
+        </ion-item> 
+        <ion-item color="calm"> 
+          <ion-label>Touran</ion-label> 
+          <ion-radio value="Volkeswagen Touran" ></ion-radio> 
+        </ion-item>
+      </ion-radio-group> 
+    </ion-list> 
+    <!-- button which will run the save method and return to home page -->
+    <ion-button (click)="saveCar()">Save</ion-button>
+  </ion-content>
+  
+</ion-content>

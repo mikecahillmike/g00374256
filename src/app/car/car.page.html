@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Cars</ion-title>
+  </ion-toolbar>
+</ion-header>
+<br>
+<ion-content color="dark">
+    <ion-toolbar >
+      <ion-title>Select the car you would like</ion-title>
+  <ul> 
+    <li [routerLink]="['/volkswagen']" routerDirection="forward">Volkswagen</li> 
+    <li [routerLink]="['/bmw']" routerDirection="forward">BMW</li> 
+    <li [routerLink]="['/mercedes']" routerDirection="forward">Mercedes</li> 
+    <li [routerLink]="['/farrari']" routerDirection="forward">Ferrari</li> 
+  </ul>
+</ion-toolbar>
+</ion-content>

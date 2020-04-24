@@ -1,0 +1,39 @@
+
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>BMW</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <br>
+    <ion-content> 
+      <ion-title>Current car is a {{myCar}}</ion-title> 
+      <ion-list > 
+        <ion-radio-group [(ngModel)]="myCar"> 
+          <ion-item color="calm"> 
+            <ion-label>M3</ion-label> 
+            <ion-radio value="BMW M3"></ion-radio> 
+          </ion-item> 
+          <ion-item color="calm"> 
+            <ion-label>5 Series</ion-label>
+            <ion-radio value="BMW 5 series"></ion-radio> 
+          </ion-item> 
+          <ion-item color="calm"> 
+            <ion-label>X5</ion-label> 
+            <ion-radio value="BMW X5" ></ion-radio> 
+          </ion-item> 
+          <ion-item color="calm"> 
+            <ion-label>i8 Coupe</ion-label> 
+            <ion-radio value="BMW i8" ></ion-radio> 
+          </ion-item> 
+          <ion-item color="calm"> 
+            <ion-label>Z4 Roadster</ion-label> 
+            <ion-radio value="BMW Z4" ></ion-radio> 
+          </ion-item>
+        </ion-radio-group> 
+      </ion-list> 
+      <ion-button (click)="saveCar()">Save</ion-button>
+    </ion-content>
+    
+  </ion-content>

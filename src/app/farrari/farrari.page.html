@@ -1,0 +1,39 @@
+
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Ferrari</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <br>
+    <ion-content> 
+      <ion-title>Current car is a {{myCar}}</ion-title> 
+      <ion-list > 
+        <ion-radio-group [(ngModel)]="myCar"> 
+          <ion-item color="calm"> 
+            <ion-label>Enzo</ion-label> 
+            <ion-radio value="Ferrari Enzo"></ion-radio> 
+          </ion-item> 
+          <ion-item color="calm"> 
+            <ion-label>599 GTB Fiorano</ion-label>
+            <ion-radio value="Ferrari 599 GTB Fiorano"></ion-radio> 
+          </ion-item> 
+          <ion-item color="calm"> 
+            <ion-label>Portofino</ion-label> 
+            <ion-radio value="Ferrari Portofino" ></ion-radio> 
+          </ion-item> 
+          <ion-item color="calm"> 
+            <ion-label>LaFerrari</ion-label> 
+            <ion-radio value="Ferrari LaFerrari" ></ion-radio> 
+          </ion-item> 
+          <ion-item color="calm"> 
+            <ion-label>P50</ion-label> 
+            <ion-radio value="Ferrari P50" ></ion-radio> 
+          </ion-item>
+        </ion-radio-group> 
+      </ion-list> 
+      <ion-button (click)="saveCar()">Save</ion-button>
+    </ion-content>
+    
+  </ion-content>
